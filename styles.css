@@ -1,29 +1,41 @@
 html{
     font-size: 16px;
     margin: 2rem;
+    background-color: #fffff0;
 }
 
 .container{
     display: inline-grid;
     grid-template-columns: repeat(12, 1fr);
-    width: 100%;
+    max-width: 95%;
 }
 
 header{
     height: 3rem;
-    border-bottom: rebeccapurple 1px solid;
     align-items: center;
     float: left;
     display: block;
     overflow: hidden;
+    background-color: #fffff0;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header h3{
     grid-column: 1 / span 6;
 }
 
+header h3 a{
+    text-decoration: none;
+    color: black;
+}
+
 header nav{
-    grid-column: -1 / span 2;
+    grid-column: -1 / span 5;
 }
 
 nav a{
@@ -37,6 +49,7 @@ nav a{
     display: inline-grid;
     grid-template-columns: 1fr / 1fr;
     flex-flow:column;
+    padding-top: 3rem;
 }
 
 .banner article{
@@ -109,4 +122,14 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 3rem 0rem;
+}
+
+.contact{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.info{
+    padding-right: 2rem;
 }

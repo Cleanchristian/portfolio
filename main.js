@@ -60,3 +60,6 @@ const duel = () => {
 
 
 battle.addEventListener('click', duel);
+
+console.log(john)
+console.log(you)

@@ -136,8 +136,9 @@ footer{
 
 .fight{
     display: block;
-    align-content: center;
-    justify-content: center;
+    align-self: center;
+    justify-self: center;
     padding: 1rem 2rem;
     margin: 2rem;
+    background-color: yellow;
 }
